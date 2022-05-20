@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- ********************************* METADATA ************************************** -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The cat API</title>
+    <link rel="stylesheet" href="./index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+
+  <!-- ********************************* BODY ************************************** -->
+  <body>
+    <main>
+      <h1>The Dog API 🐶</h1>
+      <h3>By: @darioparejadiaz</h3>
+      <button type="button" id="random-btn" class="button primary-button">
+        Show Me Other Dogs!
+      </button>
+
+      <!-- ********************************* RANDOM PET SECTION ************************************** -->
+      <!-- ********************************************************************************************* -->
+
+      <section class="section random-cats-section">
+        <h2>Random Dogs</h2>
+        <hr />
+        <div
+          id="random-cats-container"
+          class="images-container random-cats-container"
+        ></div>
+      </section>
+
+      <!-- ********************************* FAVORITE PET SECTION ************************************** -->
+      <!-- ********************************************************************************************* -->
+
+      <section class="section favorite-cats-section">
+        <h2>Favorite Dogs</h2>
+        <hr />
+
+        <!-- ********************************* FORM SECTION ************************************** -->
+
+        <section class="section form-section" id="form-section">
+          <p>
+            Cant't find any dog in the random section that you fall in love
+            with?
+          </p>
+          <p>upload your own dog!</p>
+
+          <!-- ***************** FORM ***************************** -->
+
+          <form id="form">
+            <label id="choose-btn" class="button secondary-button">
+              <span>Choose file</span>
+              <input type="file" name="file" id="file" />
+            </label>
+            <img id="preview-img" />
+            <button
+              type="button"
+              id="submit-btn"
+              class="button secondary-button"
+            >
+              Upload Dog
+            </button>
+          </form>
+        </section>
+
+        <!-- ********************************* FAVORITE GALLERY ************************************** -->
+
+        <h3>Favorite dogs gallery🐾</h3>
+        <div
+          id="favorite-cats-container"
+          class="images-container favorite-cats-container"
+        ></div>
+      </section>
+    </main>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
