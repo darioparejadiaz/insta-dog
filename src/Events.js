@@ -35,7 +35,8 @@ const toggleFavorite = async event => {
     ) {
       const randomId = event.target.id;
       event.target.src = 'http://127.0.0.1:5500/assets/heart-fill.png';
-      const favoriteId = await saveFavoritesToApi(FAVORITES_API_URL, randomId);
+      // const favoriteId = await saveFavoritesToApi(FAVORITES_API_URL, randomId);
+      const favoriteId = await saveFavoritesToApi('/favourites', randomId);
       reRenderAdded(randomId, favoriteId);
     } else if (
       event.target.parentElement.parentElement.id === 'favorite-cats-container'
@@ -69,7 +70,8 @@ const uploadCat = async () => {
     return;
   }
   const randomId = data.id;
-  const favoriteId = await saveFavoritesToApi(FAVORITES_API_URL, randomId);
+  // const favoriteId = await saveFavoritesToApi(FAVORITES_API_URL, randomId);
+  const favoriteId = await saveFavoritesToApi('favourites', randomId);
 
   renderCats([data], favoriteCatsContainer, 'upload');
   reRenderAdded(randomId, favoriteId);
