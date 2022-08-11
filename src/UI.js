@@ -113,13 +113,13 @@ export const renderDogs = (data, container, type) => {
 
     if (type === "random") {
       dogImg.src = dog.url;
-      heartIcon.src = "/assets/app-icons/heart-silhouette.png";
+      heartIcon.src = "./assets/app-icons/heart-silhouette.png";
     } else if (type === "favorite") {
       dogImg.src = dog.image.url;
-      heartIcon.src = "/assets/app-icons/heart-fill.png";
+      heartIcon.src = "./assets/app-icons/heart-fill.png";
     } else if (type === "upload") {
       dogImg.src = dog.url;
-      heartIcon.src = "/assets/app-icons/heart-fill.png";
+      heartIcon.src = "./assets/app-icons/heart-fill.png";
     }
 
     div.append(dogImg, heartIcon);

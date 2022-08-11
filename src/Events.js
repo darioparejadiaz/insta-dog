@@ -34,7 +34,7 @@ const toggleFavorite = async (event) => {
       event.target.parentElement.parentElement.id === "random-dogs-container"
     ) {
       const randomId = event.target.id;
-      event.target.src = "/assets/app-icons/heart-fill.png";
+      event.target.src = "./assets/app-icons/heart-fill.png";
       // const favoriteId = await saveFavoritesToApi(FAVORITES_API_URL, randomId);
       const favoriteId = await saveFavoritesToApi("/favourites", randomId);
       reRenderAdded(randomId, favoriteId);
