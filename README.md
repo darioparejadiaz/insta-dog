@@ -1,10 +1,10 @@
-# The Dog API
+# Insta Dog
 
 ## General overview
 
 Get random photos of dogs through this mobile and desktop web application. Your favorite photos can be saved in the best instagram style by clicking on the heart of each image. The user has the possibility to upload its own dog images to save in the favorites section of the app.
 
-To use the app click here: https://darioparejadiaz.com/the-dog-api/
+To use the app click here: https://darioparejadiaz.com/insta-dog/
 
 ## Technical overview
 
